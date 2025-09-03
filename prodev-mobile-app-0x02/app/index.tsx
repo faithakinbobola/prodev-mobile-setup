@@ -1,5 +1,5 @@
 import { Dimensions, Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 const { height, width } = Dimensions.get("window");
 
@@ -8,7 +8,7 @@ export default function Index() {
     <SafeAreaProvider>
       <SafeAreaView>
         <ImageBackground
-          source={require("@/assets/images/mobile-landing.png")}
+          source={require("@/assets/images/background-image.png")}
           style={styles.background}
           resizeMode="cover"
         >
